@@ -1,10 +1,10 @@
 # NovUS
 Company Website
-To install Django
-#pip install Django
+*To install Django
+*pip install Django
 
-To install more dependencies-
+*To install more dependencies-
 
-  #pip install django-crispy-forms
+*pip install django-crispy-forms
 
-  #pip install django-materializecss-form
+*pip install django-materializecss-form
