@@ -1,0 +1,33 @@
+{% load crispy_forms_tags %}
+{% load materializecss %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css" integrity="sha256-qj3p6P1fJIV+Ndv7RW1ovZI2UhOuboj9GcODzcNFIN8=" crossorigin="anonymous" />
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'rec_app/style.css' %}" type="text/css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<div class="main_block">
+
+      <div class="container" >
+        <h1>NovUS</h1>
+        <form method="POST">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <input type="submit" class="btn btn-primary" value="Submit" id="button_tag">
+        </form>
+
+    </div>
+
+
+</div>
+
+
+
+  </body>
+</html>
